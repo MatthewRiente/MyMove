@@ -1,0 +1,87 @@
+/////////////* header stuff *//////////////
+
+header {
+    .headContent {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        width: 1440px;
+
+        .headContent__myMoveIcon {
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+    
+        .headContent__navbar {
+            display: inline-block;
+            position: relative;
+            left: 425px;        
+            top: 20px;
+
+            .headContent__navbar__ul {
+                list-style: none;
+                color: white;
+        
+                .headContent__navbar__li {
+                    float: left;
+                    padding: 20px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+        
+                .headContent__navbar__dropdown {
+                    text-align: center;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
+    .headContent__blue {
+        position: relative;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        width: 1440px;
+        background-color: rgb(63,81,181);
+
+        .headContent__myMoveIcon {
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+    
+        .headContent__navbar {
+            display: inline-block;
+            position: relative;
+            left: 425px;        
+            top: 5px;
+
+            .headContent__navbar__ul {
+                list-style: none;
+                color: white;
+        
+                .headContent__navbar__li {
+                    float: left;
+                    padding: 20px;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+        
+                .headContent__navbar__dropdown {
+                    text-align: center;
+                    padding: 0px;
+                }
+            }
+        }
+    }   
+
+}

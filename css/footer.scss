@@ -1,0 +1,102 @@
+footer {
+    display: flex;
+    overflow: hidden;
+    height: 366px;
+    background: #3949ab;
+
+////////// Top of footer//////////
+
+    .foot__top{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+
+        .foot__top__nav {
+            position: relative;
+            top: 100px;
+            left: 50px;
+            height: 200px;
+            width: 100%;
+
+            ul {
+                line-height: 2;
+                color: white;
+                font-size: 18px;
+            }
+
+            Li {
+                transition: ease .5s;
+            }
+
+            li:hover {
+                transform: scale(1.5);
+            }
+
+        }
+
+    ////////// side of footer//////////
+
+        .foot_top_side {
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            left: 1200px;
+
+            .foot__sideLogo {
+                position: absolute;
+                display: block;
+                right: 20px;
+                top: 150px;
+            }
+
+            .foot__navSocial {
+                position: absolute;
+                display: block;
+                justify-content: flex-end;
+                top: 100px;
+    
+                ul {
+                    line-height: 2;
+                }
+
+                Li {
+                    transition: ease 1s;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                        filter: invert(100%);
+                    }
+                }
+            }
+        }
+
+    }
+
+    ////////// bottom of footer//////////
+
+    .foot__bot {
+        position: relative;
+        top: 325px;
+        left: 325px;
+
+        .foot__bot__nav {
+            position: relative;
+            color: white;
+
+            li {
+                float: left;
+                padding: 0px 10px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .foot_bottom_navSocial_border {
+                border-right: white solid 1px;
+            }
+
+        }
+    }
+
+}

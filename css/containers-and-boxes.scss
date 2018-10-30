@@ -1,0 +1,156 @@
+
+///////// Container of all the boxes //////////
+
+.content__container  {
+    position: relative;
+    display: flex;
+
+    ////////// Author icons //////////
+
+    .small_author {
+        position: relative;
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 200px;
+
+        .author__icon {
+            float: left;
+            padding-right: 10px;
+        }
+
+        p {
+            color: rgb(116, 116, 116);
+        }
+    }
+
+
+    ////////// Moving button //////////
+
+    .movingBtn {
+        border: 1px solid #3949ab;
+        border-radius: 20px;
+        color: #3949ab;
+        background: white;
+        font-size: 12.8px;
+        padding: .375rem 1.25rem .3125rem;
+        transition: ease 200ms;
+
+        &:hover {
+            border-color: white;
+            background-color: #3949ab;
+            color: white;
+        }
+    }
+
+    ////////// Article container & styling //////////
+
+    .articles {
+        display: flex;
+        margin: 0 150px;
+        margin-bottom: 30px;
+        padding: 30px;
+        background: white;
+        box-shadow: 0 0 45px 0 rgba(0,0,0,.15);
+        width: 1170px;
+
+        .articles__image {
+            display: inline-block;
+        }
+
+        .articles__content {
+            position: relative;
+            display: inline-block;
+            padding-left: 50px;
+            height: 440px;
+            width: 608px;
+            top: 15px;
+            align-content: space-between;
+
+            h3 {
+                font-size: 40px;
+                padding-bottom: 50px;
+                padding-top: 30px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.6;
+                padding-bottom: 35px;
+            }
+
+            hr {
+                width: 608px;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    ////////// Container for smaller articles //////////
+
+    .small_container {
+        display: flex;
+        position: relative;
+        width: 1150px;
+        flex-flow: row wrap;
+        flex: 33%;
+        left: 150px;
+        max-width: 1170px;
+
+        h6 {
+            position: absolute;
+            top: -50px;
+            font-size: 30px;
+        }
+
+        h5 {
+            padding-top: 5px;
+            font-size: 14px;
+        }
+
+        .smallBox {
+            display: inline-block;
+            position: relative;
+            background: white;
+            width: 365px;
+            height: 549px;
+            margin-right: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 45px 0 rgba(0,0,0,.15);
+
+            .smallBox__image {  /// &__image
+                position: absolute;
+                margin: 30px;
+            }
+
+            .smallBox__content {
+                position: relative;
+                display: inline-block;
+                padding-left: 30px;
+                height: 200px;
+                width: 300px;
+                top: 250px;
+                align-content: space-between;
+
+                h3 {
+                    font-size: 28px;
+                    padding-bottom: 15px;
+                    padding-top: 20px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 1.6;
+                    padding-bottom: 15px;
+                }
+
+            }
+
+            hr {
+                width: 365px;
+                margin-top: 275px;
+            }
+        }
+
+    }
+}

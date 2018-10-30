@@ -1,0 +1,153 @@
+@import "reset";
+@import "header";
+@import "article";
+@import "text-styles";
+@import "containers-and-boxes";
+@import "footer";
+
+/////////////* body stuff *//////////////
+main {
+    background: #fff;
+
+    .hero__BG {
+        background-image: url(../Images/mask.svg);
+        background-color: rgba(63,81,181,.7);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;   
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 419px;
+        width: 100%;
+    }
+
+////////// Hero stuff //////////
+
+    .hero__content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        width: 1000px;
+        top: 120px;
+        left: 15%;
+
+        .hero__content__header, .hero__content__gold, .hero__content__p {
+            padding: 20px;
+        }
+
+        .hero__content--gold {
+            color: goldenrod;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .hero__content__header {
+            color: white;
+            font-size: 54px;
+            text-align: center;
+        }
+
+        .hero__content__p {
+            color: rgba(255, 255, 255, 0.692);
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+
+    ////////// Top Navbar //////////
+
+    .navbar__contact__button {
+        background-color: rgb(75, 111, 243);
+        border: none;
+        color: white;
+        padding: 15px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar {
+        position: relative;
+        max-width: 1440px;
+        display: inline-block;
+        left: 150px;
+
+        .navbar__ul {
+            display: block;
+            margin: 10px 0px;
+
+            .navbar__li {
+                color: #545454;
+                padding: 40px 20px;
+                float:left;
+                font-size: 15px;
+            }
+
+            .navbar__li:hover {
+                color: rgb(83, 109, 204);
+                text-decoration: underline;
+            }
+
+            .navbar__contact {
+                padding: 25px;
+                float: right;
+                margin-left: 50px;
+
+                .navbar__contact__button {
+                    transition: ease .5s;
+                }
+
+                .navbar__contact__button:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+    ////////// The Load More Button //////////
+
+    .loadMore {
+        margin: 150px;
+
+        .loadMore__button {
+            position: relative;
+            background-color: rgb(75, 111, 243);
+            border: none;
+            color: white;
+            padding: 15px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            left: 440px;
+            transition: ease .5s;
+        }
+
+        .loadMore__button:hover {
+            transform: scale(1.2);
+        }
+
+        hr {
+            color: #ccc;
+            position: relative;
+            opacity: 0.5;
+        }
+
+        .break {
+            background-color: #fff;
+            display: block;
+            height: 1px;
+            margin: -28px auto;
+            position: relative;
+            width: 370px;
+            top: 18px;
+
+        }
+    }
+}
